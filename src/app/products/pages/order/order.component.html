@@ -10,7 +10,7 @@
 
 
 <p-toolbar>
-  <div class="p-toolbar-group-start">
+  <div class="p-toolbar-group-start p-1">
     <p-button
         label="ToogleCase"
         icon="pi pi-pencil"
@@ -69,3 +69,33 @@
     </p-panel>
   </div>
 </div>
+
+
+<div class="grid">
+  <div class="col-12 md:col-6 mt-1">
+    <p-panel header="Números que representan colores">
+
+        <ol>
+          <li> 0 | color (Rojo) </li>
+          <li> 1 | color (Negro) </li>
+          <li> 2 | color (Azúl) </li>
+          <li> 3 | color (Verde) </li>
+        </ol>
+
+    </p-panel>
+  </div>
+
+  <div class="col-12 md:col-6 mt-1">
+    <p-panel header="Visualización en colores">
+
+      <ol>
+        <li> {{ numbers[0] | color }} </li>
+        <li> {{ numbers[1] | color }} </li>
+        <li> {{ numbers[2] | color }} </li>
+        <li> {{ numbers[3] | color }} </li>
+      </ol>
+
+    </p-panel>
+  </div>
+</div>
+

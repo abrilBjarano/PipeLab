@@ -23,7 +23,7 @@ export class UncommonPageComponent {
 
 
   // i18n Plural
-  public clients: string[] = ['Abril', 'Marina', 'Bolibola', 'Georgia', 'Marcela', 'Natasha'];
+  public clients: string[] = ['Abril', 'Marina', 'Liliana', 'Georgia', 'Marcela', 'Natasha'];
   public clientsMap = {
     '=0': 'no tenemos ningun cliente esperando',
     '=1': 'tenemos un cliente esperando',

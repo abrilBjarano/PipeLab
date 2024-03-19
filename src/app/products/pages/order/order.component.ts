@@ -10,6 +10,7 @@ export class OrderComponent {
 
   public mode: string = 'lower';
   public sortBy?: keyof Hero;
+  public numbers: number[] = [0, 1, 2, 3];
 
   public heroes: Hero[] = [
     {

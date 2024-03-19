@@ -7,7 +7,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:pipesApp": "node dist/pipes-app/server/server.mjs"
+    "serve:ssr:pipesApp": "node dist/pipes-app/server/server.mjs",
+    "build:gh": "ng build --output-path dist --base-href ./ ",
+    "copy:dist": "copyfiles dist/browser/* ./docs -f",
+    "clean:dist": "rd /s /q dist",
+    "deploy:gh": "npm run build:gh && npm run copy:dist && npm run clean:dist"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +25,7 @@
     "@angular/platform-server": "^17.0.0",
     "@angular/router": "^17.0.0",
     "@angular/ssr": "^17.0.6",
+    "copyfiles": "^2.4.1",
     "express": "^4.18.2",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",

@@ -1,0 +1,1 @@
+import{J as e,L as p,e as m,g as t,v as i}from"./chunk-4YFJIX7M.js";var O=(()=>{let o=class o{};o.\u0275fac=function(n){return new(n||o)},o.\u0275mod=m({type:o}),o.\u0275inj=t({imports:[i,e,p]});let r=o;return r})();export{O as ProductsModule};
